@@ -129,7 +129,7 @@ a{
 	-ms-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
-	color: #80cc0c;
+	color: #e60b3c;
 }
 
 a:hover,
@@ -589,7 +589,7 @@ section#services {
     border-radius: 0;
     position: fixed;
     width: 100%;
-    padding: 10px 0 20px !important;
+    padding: 10px 0 10px !important;
     margin-bottom: 0;
     z-index: 10;
     -webkit-transition: all .35s;
@@ -611,7 +611,7 @@ header.page-header .main-menu{
 	padding: 15px;
 }
 .main-menu .navbar-nav{
-    padding: 20px 0;
+    padding: 12px 0;
     margin-top: 33px;
     display: inline-block;
 }
@@ -878,17 +878,17 @@ header.page-header .main-menu.minified{
 	padding: 10px 20px;
 	display: inline-block;
 	margin: 0 8px !important;
-	border: 1px solid #80cc0c;
+	border: 1px solid #e60b3c;
 }
 
 .portfolio-filter-btn-group ul li a:hover{
 	color: #FFF;
-	background-color: #80cc0c;
+	background-color: #e60b3c;
 }
 
 .portfolio-filter-btn-group ul li a.selected{
 	color: #ffffff;
-	background: #80cc0c;
+	background: #e60b3c;
 }
 .portfolio-items{
 	overflow: hidden;
