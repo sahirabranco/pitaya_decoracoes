@@ -227,6 +227,30 @@ jQuery(document).ready(function() {
 
         }
 
+        if ($("#local").val() == '') {
+            $("#local").css('border-color', '#F89406')
+            erro++
+        } else {
+            $("#local").css('border-color', '#74b574')
+
+        }
+
+        if ($("#cidade").val() == '') {
+            $("#cidade").css('border-color', '#F89406')
+            erro++
+        } else {
+            $("#cidade").css('border-color', '#74b574')
+
+        }
+
+        if ($("#tipo").val() == '') {
+            $("#tipo").css('border-color', '#F89406')
+            erro++
+        } else {
+            $("#tipo").css('border-color', '#74b574')
+
+        }
+
         if ($("#mensagem").val() == '') {
             $("#mensagem").css('border-color', '#F89406')
             erro++

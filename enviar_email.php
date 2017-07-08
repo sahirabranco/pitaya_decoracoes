@@ -7,9 +7,19 @@ define('EMPRESA', 'Pitaya Decorações');
 if (isset($_POST['nome'])){
     $nome    = (isset($_POST['nome']))? $_POST['nome']: '';
     $email   = (isset($_POST['email']))? $_POST['email']: '';
+    $local   = (isset($_POST['local']))? $_POST['local']: '';
+    $telefone   = (isset($_POST['telefone']))? $_POST['telefone']: '';
+    $cidade   = (isset($_POST['cidade']))? $_POST['cidade']: '';
+    $tipo   = (isset($_POST['tipo']))? $_POST['tipo']: '';
     $msg     = (isset($_POST['mensagem']))? $_POST['mensagem']: '';
 
-    if (empty($nome) || empty($email) || empty($msg)){
+    if (empty($nome) ||
+        empty($email) ||
+        empty($local) ||
+        empty($telefone) ||
+        empty($cidade) ||
+        empty($tipo) ||
+        empty($msg)){
          $array  = array('erro' => 2, 'mensagem' => 'Preencher os campos obrigatórios(*)!');
          echo json_encode($array);
     }else{
@@ -22,6 +32,10 @@ if (isset($_POST['nome'])){
         $mensagem .= "**********************************************************\n";
         $mensagem .= "Nome do Contato: ".$nome."\n";
         $mensagem .= "E-mail do Contato: ".$email."\n";
+        $mensagem .= "Local do evento: ".$local."\n";
+        $mensagem .= "Telefone para contato: ".$telefone."\n";
+        $mensagem .= "Cidade do evento: ".$cidade."\n";
+        $mensagem .= "Tipo do evento: ".$tipo."\n";
         $mensagem .= "**********************************************************\n";
         $mensagem .= "Mensagem: \n".$msg."\n";
 
@@ -38,7 +52,7 @@ if (isset($_POST['nome'])){
 }
 
 function EnviaEmail($para, $from, $assunto, $mensagem){
-
+    $para = "viisouza10@live.com";
     $headers = "From: ".SERVIDOR."\n";
     $headers .= "Reply-To: $para\n";
     $headers .= "Subject: $assunto\n";
