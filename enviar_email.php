@@ -52,7 +52,7 @@ if (isset($_POST['nome'])){
 }
 
 function EnviaEmail($para, $from, $assunto, $mensagem){
-    $para = "viisouza10@live.com";
+    $para = DESTINO;
     $headers = "From: ".SERVIDOR."\n";
     $headers .= "Reply-To: $para\n";
     $headers .= "Subject: $assunto\n";
